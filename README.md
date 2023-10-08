@@ -31,17 +31,14 @@ You can now query the database and build restaurant management or rating applica
 ## Database Schema
 The database schema includes the following tables:
 
-Database Schema
-The database schema comprises the following tables:
-
-Branch: Stores branch information for restaurants.
-Chef: Manages chef details and positions.
-Customers: Records customer phone numbers and entry times.
-Dish: Contains dish names and prices.
-Dish_meal: Maps dishes to meal types.
-Employee: Manages employee details and branch assignments.
-Feedback: Captures customer feedback and ratings.
-Manager: Manages managerial positions within the restaurant.
-Recipe: Contains dish names and their ingredient lists.
-Restaurant: Stores restaurant details.
-Waiter: Manages waiter details.
+**Branch**: Stores branch information for restaurants.
+**Chef**: Manages chef details and positions.
+**Customers**: Records customer phone numbers and entry times.
+**Dish**: Contains dish names and prices.
+**Dish_meal**: Maps dishes to meal types.
+**Employee**: Manages employee details and branch assignments.
+**Feedback**: Captures customer feedback and ratings.
+**Manager**: Manages managerial positions within the restaurant.
+**Recipe**: Contains dish names and their ingredient lists.
+**Restaurant**: Stores restaurant details.
+**Waiter**: Manages waiter details.
