@@ -37,9 +37,6 @@ Recipe: Contains dish names and their ingredient lists.
 Restaurant: Stores restaurant details.
 Waiter: Manages waiter details.
 
-## Acknowledgments
-This database schema and data dump were created for educational and demonstration purposes.
-
 
 Contact
 If you have any questions or issues, please feel free to contact us.
