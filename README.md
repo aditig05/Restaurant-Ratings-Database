@@ -37,9 +37,3 @@ Recipe: Contains dish names and their ingredient lists.
 Restaurant: Stores restaurant details.
 Waiter: Manages waiter details.
 
-
-Contact
-If you have any questions or issues, please feel free to contact us.
-
-Your Name
-
