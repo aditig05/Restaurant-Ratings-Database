@@ -20,15 +20,52 @@ The Restaurant Ratings Database is a MySQL database schema and data dump that ca
 - **Data Consistency**: Implement foreign keys and constraints to ensure data consistency and integrity.
 
 ## Usage
-Import the MySQL dump into your MySQL server to create the Restaurant_Ratings database.
+1. Import the MySQL dump into your MySQL server:
 
-```bash
-   mysql -u your_username -p Restaurant_Ratings < restaurant_ratings.sql
-Replace your_username with your MySQL username.
+    ```bash
+    mysql -u your_username -p Restaurant_Ratings < restaurant_ratings.sql
+    ```
 
-You can now query the database and build restaurant management or rating applications on top of it.
+    Replace `your_username` with your MySQL username.
+
+2. With the database successfully set up, you can now query it and build restaurant management or rating applications on top of it. Here's an example of how to connect to the database using Python:
+
+    ```python
+    import mysql.connector
+
+    # Replace with your own database credentials
+    db_config = {
+        "host": "localhost",
+        "user": "your_username",
+        "password": "your_password",
+        "database": "Restaurant_Ratings",
+    }
+
+    # Connect to the database
+    try:
+        connection = mysql.connector.connect(**db_config)
+        if connection.is_connected():
+            print("Connected to the Restaurant_Ratings database")
+            # Start executing SQL queries here
+        else:
+            print("Connection failed")
+
+    except Exception as e:
+        print(f"Error: {str(e)}")
+
+    finally:
+        # Close the database connection when done
+        if connection.is_connected():
+            connection.close()
+            print("Connection closed")
+    ```
+
+    Replace `"your_username"` and `"your_password"` with your MySQL database credentials.
+
+3. You can now use this connection to perform various operations on the database, such as retrieving, updating, or inserting data, depending on your application's requirements.
 
 ## Database Schema
+...
 The database schema includes the following tables:
 
 **Branch**: Stores branch information for restaurants.
